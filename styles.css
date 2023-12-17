@@ -190,3 +190,52 @@ h3 {
   -webkit-text-fill-color: transparent;
   transition: color 0.3s ease;
 }
+
+/* Responsive Section Styles */
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 48px !important;
+  }
+
+  h2 {
+    font-size: 24px !important;
+  }
+
+  h3 {
+    font-size: 18px !important;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0px;
+    align-items: center;
+  }
+
+  .nav a {
+    font-size: 14px !important;
+  }
+
+  .main a {
+    font-size: 16px !important;
+    padding: 10px 30px;
+  }
+
+  .social-media a i {
+    font-size: 22px;
+    background: linear-gradient(
+      90.4deg,
+      rgb(248, 52, 246) 0.6%,
+      rgb(152, 38, 252) 90%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: color 0.3s ease;
+  }
+}
