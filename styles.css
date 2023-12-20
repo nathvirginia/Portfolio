@@ -18,7 +18,12 @@
   --primary-font: "Playfair Display", serif;
   --secondary-font: "Poppins", sans-serif;
   --primary-color: #090e13;
-  --secondary-color: #a452f6;
+  /*--secondary-color: #a452f6;*/
+  --secondary-color: linear-gradient(
+    90.4deg,
+    rgb(248, 52, 246) 0.6%,
+    rgb(152, 38, 252) 90%
+  );
 }
 
 /* Body Styles */
@@ -61,21 +66,6 @@ h3 {
   line-height: 1.5 !important;
 }
 
-.animation {
-  color: white;
-}
-
-/* Homepage Section */
-
-.homepage {
-  background-color: var(--primary-color);
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 /* Navigation Styles */
 
 .nav {
@@ -106,56 +96,6 @@ h3 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: color 0.3s ease;
-}
-
-.home {
-  background: linear-gradient(
-    90.4deg,
-    rgb(248, 52, 246) 0.6%,
-    rgb(152, 38, 252) 90%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* Main Section Styles */
-
-.main {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.main a {
-  font-family: var(--secondary-font);
-  color: #ffffff !important;
-  font-size: 18px !important;
-  background-color: var(--secondary-color);
-  text-decoration: none;
-  border-radius: 4px;
-  line-height: 27px;
-  padding: 15px 50px;
-  margin: 15px;
-  line-height: 6;
-  font-weight: 500 !important;
-}
-
-.main a:hover {
-  opacity: 0.9;
-  transition: color 0.3s ease;
-}
-
-.main .about-me-button {
-  background-color: #ffffff !important;
-  color: var(--primary-color) !important;
-}
-
-.main .portfolio-button {
-  background: linear-gradient(
-    90.4deg,
-    rgb(248, 52, 246) 0.6%,
-    rgb(152, 38, 252) 90%
-  );
 }
 
 /* Social Media Section Styles */
@@ -191,6 +131,60 @@ h3 {
   transition: color 0.3s ease;
 }
 
+/* Homepage  Styles */
+
+.animation {
+  color: white;
+}
+
+.homepage {
+  background-color: var(--primary-color);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage-main {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.homepage-main a {
+  font-family: var(--secondary-font);
+  color: #ffffff !important;
+  font-size: 18px !important;
+  background-color: var(--secondary-color);
+  text-decoration: none;
+  border-radius: 4px;
+  line-height: 27px;
+  padding: 15px 50px;
+  margin: 15px;
+  line-height: 6;
+  font-weight: 500 !important;
+}
+
+.homepage-main a:hover {
+  opacity: 0.9;
+  transition: color 0.3s ease;
+}
+
+.homepage-main .about-me-button {
+  background-color: #ffffff !important;
+  color: var(--primary-color) !important;
+}
+
+.homepage-main .portfolio-button {
+  background: linear-gradient(
+    90.4deg,
+    rgb(248, 52, 246) 0.6%,
+    rgb(152, 38, 252) 90%
+  );
+}
+
+/* About page  Styles */
+
 /* Responsive Section Styles */
 @media only screen and (max-width: 768px) {
   body {
@@ -219,9 +213,19 @@ h3 {
 
   .nav a {
     font-size: 14px !important;
+    background: linear-gradient(
+      90.4deg,
+      rgb(248, 52, 246) 0.6%,
+      rgb(152, 38, 252) 90%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: color 0.3s ease;
+    
   }
 
-  .main a {
+  .homepage-main a {
     font-size: 16px !important;
     padding: 10px 30px;
   }
